@@ -14,7 +14,7 @@ concurrency:
 jobs:
   ci:
     if: github.event.inputs.confirm == 'deploy'
-    uses: ./.github/workflows/ci.yml
+    uses: ./.github/workflows/CI.yml
 
   deploy-prod:
     needs: ci
